@@ -6,6 +6,7 @@
   background-position: center;
   display: flex;
   overflow: inherit;
+  position: relative;
 
   &__left,
   &__right {
@@ -33,6 +34,7 @@
   &__left-hand {
     position: absolute;
     width: auto;
+    overflow: hidden;
   }
 
   &__left-hand {

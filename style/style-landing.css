@@ -25,6 +25,7 @@ body {
   display: -ms-flexbox;
   display: flex;
   overflow: inherit;
+  position: relative;
 }
 
 .hero-landing__left, .hero-landing__right {
@@ -57,6 +58,7 @@ body {
 .hero-landing__right-hand, .hero-landing__left-hand {
   position: absolute;
   width: auto;
+  overflow: hidden;
 }
 
 .hero-landing__left-hand {
