@@ -1,0 +1,63 @@
+.hero-landing {
+  height: 100vh;
+  width: 100vw;
+  background-image: url("../images/landing-page__background.svg");
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  overflow: inherit;
+
+  &__left,
+  &__right {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+  }
+
+  &__tag-school {
+    height: 200px;
+    position: relative;
+    top: 11px;
+  }
+
+  &__tag {
+    height: 250px;
+    position: relative;
+    bottom: 10px;
+  }
+
+  &__right-hand,
+  &__left-hand {
+    position: absolute;
+    width: auto;
+  }
+
+  &__left-hand {
+    transform: rotate(5deg);
+    height: 320px;
+    top: 3%;
+    left: -60px;
+  }
+
+  &__right-hand {
+    transform: rotate(15deg);
+    height: 380px;
+    bottom: 0;
+    right: -2%;
+  }
+}
+
+@media (max-width: $breakpoint--middle-screen) {
+  .hero-landing {
+    &__left-hand {
+      height: 280px;
+    }
+
+    &__right-hand {
+      height: 320px;
+    }
+  }
+}

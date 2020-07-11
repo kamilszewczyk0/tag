@@ -1,0 +1,86 @@
+html {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  overflow: hidden;
+}
+
+*,
+::before,
+::after {
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+}
+
+body {
+  overflow: hidden;
+}
+
+.hero-landing {
+  height: 100vh;
+  width: 100vw;
+  background-image: url("../images/landing-page__background.svg");
+  background-size: cover;
+  background-position: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  overflow: inherit;
+}
+
+.hero-landing__left, .hero-landing__right {
+  width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.hero-landing__tag-school {
+  height: 200px;
+  position: relative;
+  top: 11px;
+}
+
+.hero-landing__tag {
+  height: 250px;
+  position: relative;
+  bottom: 10px;
+}
+
+.hero-landing__right-hand, .hero-landing__left-hand {
+  position: absolute;
+  width: auto;
+}
+
+.hero-landing__left-hand {
+  -webkit-transform: rotate(5deg);
+          transform: rotate(5deg);
+  height: 320px;
+  top: 3%;
+  left: -60px;
+}
+
+.hero-landing__right-hand {
+  -webkit-transform: rotate(15deg);
+          transform: rotate(15deg);
+  height: 380px;
+  bottom: 0;
+  right: -2%;
+}
+
+@media (max-width: 1660px) {
+  .hero-landing__left-hand {
+    height: 280px;
+  }
+  .hero-landing__right-hand {
+    height: 320px;
+  }
+}
+/*# sourceMappingURL=style-landing.css.map */
