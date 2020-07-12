@@ -63,3 +63,35 @@
     }
   }
 }
+
+@media (max-width: $breakpoint--mobile-big) {
+  .hero-landing {
+    background-image: url("../images/landing-page__background--phone.svg");
+    display: grid;
+    grid-template: repeat(2, 50%);
+
+    &__right {
+      grid-area: 2/2;
+    }
+
+    &__left,
+    &__right {
+      width: 100%;
+      padding: 0 4px;
+    }
+
+    &__link {
+      height: 80%;
+    }
+
+    &__tag,
+    &__tag-school {
+      width: 100%;
+    }
+
+    &__left-hand,
+    &__right-hand {
+      display: none;
+    }
+  }
+}

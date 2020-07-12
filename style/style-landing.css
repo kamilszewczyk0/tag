@@ -1,7 +1,6 @@
 html {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  overflow: hidden;
 }
 
 *,
@@ -83,6 +82,33 @@ body {
   }
   .hero-landing__right-hand {
     height: 320px;
+  }
+}
+
+@media (max-width: 700px) {
+  .hero-landing {
+    background-image: url("../images/landing-page__background--phone.svg");
+    display: -ms-grid;
+    display: grid;
+    grid-template: repeat(2, 50%);
+  }
+  .hero-landing__right {
+    -ms-grid-row: 2;
+    -ms-grid-column: 2;
+    grid-area: 2/2;
+  }
+  .hero-landing__left, .hero-landing__right {
+    width: 100%;
+    padding: 0 4px;
+  }
+  .hero-landing__link {
+    height: 80%;
+  }
+  .hero-landing__tag, .hero-landing__tag-school {
+    width: 100%;
+  }
+  .hero-landing__left-hand, .hero-landing__right-hand {
+    display: none;
   }
 }
 /*# sourceMappingURL=style-landing.css.map */
