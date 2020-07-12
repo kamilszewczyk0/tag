@@ -64,6 +64,24 @@
   }
 }
 
+@media (max-width: $breakpoint--small-screen) {
+  .hero-landing {
+    &__left-hand {
+      height: 240px;
+    }
+
+    &__right-hand {
+      height: 280px;
+    }
+    &__tag {
+      height: 180px;
+    }
+    &__tag-school {
+      height: 150px;
+    }
+  }
+}
+
 @media (max-width: $breakpoint--mobile-big) {
   .hero-landing {
     background-image: url("../images/landing-page__background--phone.svg");
