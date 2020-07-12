@@ -90,7 +90,10 @@ body {
     background-image: url("../images/landing-page__background--phone.svg");
     display: -ms-grid;
     display: grid;
-    grid-template: repeat(2, 50%);
+    -ms-grid-rows: (50%)[2];
+        grid-template-rows: repeat(2, 50%);
+    -ms-grid-columns: (50%)[2];
+        grid-template-columns: repeat(2, 50%);
     justify-items: center;
     -webkit-box-align: center;
         -ms-flex-align: center;
