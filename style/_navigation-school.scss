@@ -1,0 +1,35 @@
+.nav {
+  width: 100%;
+  height: 120px;
+  box-shadow: 0 4px 6px $primary-dark;
+}
+
+.navigation {
+  height: inherit;
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  font-family: $font__header--school;
+
+  &__left,
+  &__right {
+    width: 50%;
+  }
+
+  &__left {
+    display: flex;
+    align-items: center;
+  }
+
+  &__right {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: $font-header;
+  }
+
+  &__logo {
+    height: 100px;
+  }
+}

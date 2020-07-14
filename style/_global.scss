@@ -12,9 +12,24 @@ body {
   overflow: hidden;
 }
 
+.container {
+  max-width: 1440px;
+  height: inherit;
+  margin: 0 auto;
+  padding: 0 30px;
+}
+
 $primary-dark: #000;
 $primary-light: #fec300;
 $secondary: #fff;
+
+$font__header--school: "Gloria Hallelujah", cursive;
+$font__header--bar: "Anton", sans-serif;
+$font__paragraph: "Gothic A1", sans-serif;
+
+$font-header: 2rem;
+$font-paragraph: 20px;
+
 $breakpoint--middle-screen: 1660px;
 $breakpoint--small-screen: 1360px;
 $breakpoint--mobile-big: 700px;
