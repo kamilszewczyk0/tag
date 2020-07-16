@@ -10,15 +10,48 @@ html {
           box-sizing: inherit;
 }
 
-body {
-  overflow: hidden;
-}
-
 .container {
   max-width: 1440px;
   height: inherit;
   margin: 0 auto;
   padding: 0 30px;
+}
+
+.hero {
+  height: calc(100vh - 120px);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.hero__left, .hero__right {
+  width: 50%;
+  position: relative;
+}
+
+.hero__left {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.hero__img--left {
+  height: 70%;
+}
+
+.hero__img--right {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  height: 100%;
+  z-index: -1;
 }
 
 .nav {
@@ -67,6 +100,15 @@ body {
 
 .navigation__logo {
   height: 100px;
+}
+
+.navigation__link {
+  text-decoration: none;
+  color: #000;
+}
+
+.about-us {
+  min-height: 100vh;
 }
 
 body {

@@ -8,10 +8,6 @@ html {
   box-sizing: inherit;
 }
 
-body {
-  overflow: hidden;
-}
-
 .container {
   max-width: 1440px;
   height: inherit;
@@ -33,3 +29,5 @@ $font-paragraph: 20px;
 $breakpoint--middle-screen: 1660px;
 $breakpoint--small-screen: 1360px;
 $breakpoint--mobile-big: 700px;
+
+$nav-height: 120px;

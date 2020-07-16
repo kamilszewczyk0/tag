@@ -1,0 +1,29 @@
+.hero {
+  height: calc(100vh - #{$nav-height});
+  display: flex;
+
+  &__left,
+  &__right {
+    width: 50%;
+    position: relative;
+  }
+
+  &__left {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &__img--left {
+    height: 70%;
+  }
+
+  &__img--right {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    height: 100%;
+    z-index: -1;
+  }
+}
