@@ -95,7 +95,7 @@ html {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  font-size: 2rem;
+  font-size: 2.3rem;
 }
 
 .navigation__logo {
@@ -109,6 +109,75 @@ html {
 
 .about-us {
   min-height: 100vh;
+}
+
+.about-us__header {
+  font-family: "Gloria Hallelujah", cursive;
+  font-size: 2.3rem;
+  text-shadow: 3px 3px 0 #fff;
+}
+
+.about-us__paragraph--odd {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  padding: 50px 0;
+}
+
+.about-us__text--odd {
+  -ms-flex-preferred-size: 50%;
+      flex-basis: 50%;
+  font-family: "Gothic A1", sans-serif;
+  font-size: 20px;
+  text-align: right;
+  vertical-align: middle;
+  padding-right: 120px;
+}
+
+.about-us__img--odd {
+  height: 380px;
+  -webkit-box-shadow: 10px -10px 0 #fff;
+          box-shadow: 10px -10px 0 #fff;
+}
+
+.about-us__paragraph--even {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  padding: 50px 0;
+}
+
+.about-us__text--even {
+  -ms-flex-preferred-size: 50%;
+      flex-basis: 50%;
+  font-family: "Gothic A1", sans-serif;
+  font-size: 20px;
+  text-align: left;
+  vertical-align: middle;
+  padding-left: 120px;
+  -webkit-box-ordinal-group: 2;
+      -ms-flex-order: 1;
+          order: 1;
+}
+
+.about-us__img--even {
+  height: 380px;
+  -webkit-box-shadow: -10px 10px 0 #fff;
+          box-shadow: -10px 10px 0 #fff;
+}
+
+.courses__header {
+  font-family: "Gloria Hallelujah", cursive;
+  font-size: 2.3rem;
+  text-shadow: 3px 3px 0 #fff;
+  text-align: right;
+  padding-right: 200px;
 }
 
 body {

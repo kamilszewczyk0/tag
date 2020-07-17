@@ -1,0 +1,9 @@
+.courses {
+  &__header {
+    font-family: $font__header--school;
+    font-size: $font-header;
+    text-shadow: 3px 3px 0 $secondary;
+    text-align: right;
+    padding-right: 200px;
+  }
+}
