@@ -180,6 +180,49 @@ html {
   padding-right: 200px;
 }
 
+.courses__paragraph--odd {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 80px 0;
+}
+
+.courses__paragraph--even {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+  margin: 80px 0;
+}
+
+.courses__description--even {
+  text-align: right;
+}
+
+.courses__title--odd, .courses__title--even {
+  font-family: "Gloria Hallelujah", cursive;
+  font-size: 2.3rem;
+}
+
+.courses__text--odd {
+  font-family: "Gothic A1", sans-serif;
+  font-size: 20px;
+  padding-right: 160px;
+}
+
+.courses__text--even {
+  font-family: "Gothic A1", sans-serif;
+  font-size: 20px;
+  padding-left: 160px;
+}
+
+.courses__img--odd, .courses__img--even {
+  height: 380px;
+}
+
 body {
   background-color: #fec300;
 }

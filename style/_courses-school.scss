@@ -6,4 +6,42 @@
     text-align: right;
     padding-right: 200px;
   }
+
+  &__paragraph--odd {
+    display: flex;
+    margin: 80px 0;
+  }
+
+  &__paragraph--even {
+    display: flex;
+    flex-direction: row-reverse;
+    margin: 80px 0;
+  }
+
+  &__description--even {
+    text-align: right;
+  }
+
+  &__title--odd,
+  &__title--even {
+    font-family: $font__header--school;
+    font-size: $font-header;
+  }
+
+  &__text--odd {
+    font-family: $font__paragraph;
+    font-size: $font-paragraph;
+    padding-right: 160px;
+  }
+
+  &__text--even {
+    font-family: $font__paragraph;
+    font-size: $font-paragraph;
+    padding-left: 160px;
+  }
+
+  &__img--odd,
+  &__img--even {
+    height: $img-height;
+  }
 }
