@@ -1,0 +1,11 @@
+@import "global";
+@import "school-hero";
+@import "school-navigation";
+@import "school-about-us";
+@import "school-courses";
+@import "school-contact";
+@import "school-footer";
+
+body {
+  background-color: $primary-light;
+}

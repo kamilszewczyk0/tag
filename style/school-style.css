@@ -107,6 +107,27 @@ html {
   color: #000;
 }
 
+.navigation__link--btn {
+  color: #fec300;
+}
+
+.navigation__lang-switch {
+  font-family: "Gothic A1", sans-serif;
+  background-color: #000;
+  border: none;
+  border-radius: 25px;
+  -webkit-box-shadow: 3px 3px 0 #fff;
+          box-shadow: 3px 3px 0 #fff;
+  padding: 5px 15px;
+}
+
+.navigation__lang-switch:active {
+  -webkit-transform: translateX(3px) translateY(3px);
+          transform: translateX(3px) translateY(3px);
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
 .about-us {
   min-height: 100vh;
 }
@@ -341,4 +362,4 @@ iframe {
 body {
   background-color: #fec300;
 }
-/*# sourceMappingURL=style-school.css.map */
+/*# sourceMappingURL=school-style.css.map */

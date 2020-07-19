@@ -36,5 +36,23 @@
   &__link {
     text-decoration: none;
     color: $primary-dark;
+
+    &--btn {
+      color: $primary-light;
+    }
+  }
+
+  &__lang-switch {
+    font-family: $font__paragraph;
+    background-color: $primary-dark;
+    border: none;
+    border-radius: 25px;
+    box-shadow: 3px 3px 0 $secondary;
+    padding: 5px 15px;
+
+    &:active {
+      transform: translateX(3px) translateY(3px);
+      box-shadow: none;
+    }
   }
 }
