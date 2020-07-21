@@ -37,10 +37,6 @@
     text-decoration: none;
     color: $primary-light;
 
-    &:active {
-      transform: translateX(3px) translateY(3px);
-    }
-
     &--btn {
       color: $primary-dark;
     }

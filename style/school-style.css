@@ -107,11 +107,6 @@ html {
   color: #000;
 }
 
-.navigation__link:active {
-  -webkit-transform: translateX(3px) translateY(3px);
-          transform: translateX(3px) translateY(3px);
-}
-
 .navigation__link--btn {
   color: #fec300;
 }
