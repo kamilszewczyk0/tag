@@ -1,6 +1,7 @@
 html {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  overflow-x: hidden;
 }
 
 *,
@@ -15,6 +16,11 @@ html {
   height: inherit;
   margin: 0 auto;
   padding: 0 30px;
+}
+
+body {
+  background-color: #000;
+  color: #fec300;
 }
 
 .nav {
@@ -91,8 +97,119 @@ html {
           box-shadow: none;
 }
 
-body {
-  background-color: #000;
-  color: #fec300;
+.hero {
+  min-height: calc(100vh - 120px);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  overflow: hidden;
+}
+
+.hero__img-container1 {
+  height: calc(100vh - 120px);
+}
+
+.hero__img--lady {
+  position: absolute;
+  height: 80%;
+  -webkit-transform: rotate(17deg) translateX(-25%) translateY(18%);
+          transform: rotate(17deg) translateX(-25%) translateY(18%);
+}
+
+.hero__header {
+  font-family: "Anton", sans-serif;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+  font-size: 54px;
+  text-shadow: 2px 2px 0 #fff;
+  letter-spacing: 3px;
+  position: relative;
+  -webkit-transform: translateY(-200%) translateX(25%);
+          transform: translateY(-200%) translateX(25%);
+}
+
+.hero__img-container2 {
+  height: calc(100vh - 120px);
+}
+
+.hero__img--hand {
+  height: 100%;
+  position: absolute;
+  -webkit-transform: rotateZ(-10deg) translateX(-85%) translateY(-13%);
+          transform: rotateZ(-10deg) translateX(-85%) translateY(-13%);
+}
+
+.about-us {
+  min-height: 100vh;
+  margin-top: 150px;
+}
+
+.about-us__header {
+  font-family: "Anton", sans-serif;
+  font-size: 2.3rem;
+  padding: 40px 0;
+  -webkit-transform: translateX(25%);
+          transform: translateX(25%);
+}
+
+.about-us__paragraph--odd {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  padding: 50px 0;
+}
+
+.about-us__text--odd {
+  -ms-flex-preferred-size: 50%;
+      flex-basis: 50%;
+  font-family: "Gothic A1", sans-serif;
+  font-size: 20px;
+  text-align: right;
+  vertical-align: middle;
+  padding-right: 120px;
+}
+
+.about-us__img--odd {
+  height: 380px;
+  -webkit-box-shadow: 10px -10px 0 #fff;
+          box-shadow: 10px -10px 0 #fff;
+}
+
+.about-us__paragraph--even {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  padding: 50px 0;
+}
+
+.about-us__text--even {
+  -ms-flex-preferred-size: 50%;
+      flex-basis: 50%;
+  font-family: "Gothic A1", sans-serif;
+  font-size: 20px;
+  text-align: left;
+  vertical-align: middle;
+  padding-left: 120px;
+  -webkit-box-ordinal-group: 2;
+      -ms-flex-order: 1;
+          order: 1;
+}
+
+.about-us__img--even {
+  height: 380px;
+  -webkit-box-shadow: -10px 10px 0 #fff;
+          box-shadow: -10px 10px 0 #fff;
 }
 /*# sourceMappingURL=bar-style.css.map */

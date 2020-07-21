@@ -1,6 +1,7 @@
 html {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  overflow-x: hidden;
 }
 
 *,
@@ -15,6 +16,10 @@ html {
   height: inherit;
   margin: 0 auto;
   padding: 0 30px;
+}
+
+body {
+  background-color: #fec300;
 }
 
 .hero {
@@ -357,9 +362,5 @@ iframe {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-}
-
-body {
-  background-color: #fec300;
 }
 /*# sourceMappingURL=school-style.css.map */

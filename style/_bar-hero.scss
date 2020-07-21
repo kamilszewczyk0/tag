@@ -1,0 +1,37 @@
+.hero {
+  min-height: calc(100vh - #{$nav-height});
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  overflow: hidden;
+
+  &__img-container1 {
+    height: calc(100vh - #{$nav-height});
+  }
+
+  &__img--lady {
+    position: absolute;
+    height: 80%;
+    transform: rotate(17deg) translateX(-25%) translateY(18%);
+  }
+
+  &__header {
+    font-family: $font__header--bar;
+    align-self: flex-end;
+    font-size: 54px;
+    text-shadow: 2px 2px 0 $secondary;
+    letter-spacing: 3px;
+    position: relative;
+    transform: translateY(-200%) translateX(25%);
+  }
+
+  &__img-container2 {
+    height: calc(100vh - #{$nav-height});
+  }
+
+  &__img--hand {
+    height: 100%;
+    position: absolute;
+    transform: rotateZ(-10deg) translateX(-85%) translateY(-13%);
+  }
+}
