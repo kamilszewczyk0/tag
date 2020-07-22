@@ -117,9 +117,9 @@ body {
 
 .hero__img--lady {
   position: absolute;
-  height: 80%;
-  -webkit-transform: rotate(17deg) translateX(-25%) translateY(18%);
-          transform: rotate(17deg) translateX(-25%) translateY(18%);
+  height: 67%;
+  -webkit-transform: rotate(17deg) translateY(18%);
+          transform: rotate(17deg) translateY(18%);
 }
 
 .hero__header {
@@ -211,5 +211,80 @@ body {
   height: 380px;
   -webkit-box-shadow: -10px 10px 0 #fff;
           box-shadow: -10px 10px 0 #fff;
+}
+
+.menu {
+  min-height: 100vh;
+  margin-top: 100px;
+}
+
+.menu__header {
+  font-family: "Anton", sans-serif;
+  font-size: 2.3rem;
+  text-align: center;
+  padding: 50px 0;
+}
+
+.menu__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 80vh;
+}
+
+.menu__left, .menu__right {
+  -ms-flex-preferred-size: 50%;
+      flex-basis: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.menu__img--hand {
+  position: absolute;
+  height: 48%;
+  -webkit-transform: rotateZ(10deg) translateY(-25vh);
+          transform: rotateZ(10deg) translateY(-25vh);
+  left: -5%;
+}
+
+.menu__btn {
+  font-family: "Anton", sans-serif;
+  font-size: 2.3rem;
+  border-radius: 32px;
+  padding: 20px 80px;
+  background-color: #fec300;
+  border: none;
+  -webkit-box-shadow: 3px 3px 0 #fff;
+          box-shadow: 3px 3px 0 #fff;
+}
+
+.menu__btn:active {
+  -webkit-transform: translateX(3px) translateY(3px);
+          transform: translateX(3px) translateY(3px);
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.menu__btn:focus {
+  outline: none;
+}
+
+.menu__link {
+  text-decoration: none;
+  color: #000;
+}
+
+.menu__text {
+  font-family: "Gothic A1", sans-serif;
+  font-size: 20px;
+  width: 80%;
+  text-align: justify;
 }
 /*# sourceMappingURL=bar-style.css.map */
