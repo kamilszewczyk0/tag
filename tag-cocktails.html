@@ -9,10 +9,19 @@
       integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
       crossorigin="anonymous" />
    <link
-      href="https://fonts.googleapis.com/css2?family=Anton&family=Gloria+Hallelujah&family=Gothic+A1:wght@200&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Anton&family=Gloria+Hallelujah&family=Lato:wght@300&display=swap"
       rel="stylesheet">
+
    <link rel="stylesheet" href="./style/bar-style.css">
+   <link rel="stylesheet" href="./style/lightgallery.css">
    <script src="https://kit.fontawesome.com/a9fa0bc085.js" crossorigin="anonymous"></script>
+   <script defer src="https://cdnjs.cloudflare.com/ajax/libs/macy/2.5.1/macy.min.js"
+      integrity="sha256-hQXjNt6cwIhqj1BHNCYcbWb8L/sHoo7PNUUZsBrD+9Q=" crossorigin="anonymous"></script>
+   <script defer src="./js/app.js"></script>
+   <script src="./js/lightgallery.min.js"></script>
+   <script src="./js/lg-thumbnail.min.js"></script>
+   <script src="./js/lg-fullscreen.min.js"></script>
+   <script defer src="./js/lg-share.js"></script>
 
 </head>
 
@@ -28,8 +37,8 @@
                <li class="navigation__list-item">
                   <a href="#menu" class="navigation__link">MENU</a>
                </li>
-               <li class="navigation__list-item"><a href="" class="navigation__link">GALERIA</a></li>
-               <li class="navigation__list-item"><a href="" class="navigation__link">KONTAKT</a></li>
+               <li class="navigation__list-item"><a href="#gallery" class="navigation__link">GALERIA</a></li>
+               <li class="navigation__list-item"><a href="#contact" class="navigation__link">KONTAKT</a></li>
                <li class="navigation__list-item"><button class="navigation__lang-switch"><a href=""
                         class="navigation__link navigation__link--btn" type="button">ENG</a></button></li>
             </ul>
@@ -99,7 +108,92 @@
             </div>
          </div>
       </section>
+      <section id="gallery" class="gallery">
+         <h2 class="gallery__header">GALERIA</h2>
+         <div class="gallery__container">
+            <div class="gallery__images" id="lightgallery">
+               <a href="./images/bobas.jpg" class="gallery__link"><img src="./images/bobas.jpg" alt="cocktail photo"
+                     class="gallery__image"></a>
+               <a href="./images/bobas.jpg" class="gallery__link"><img src="./images/bobas.jpg" alt="cocktail photo"
+                     class="gallery__image"></a>
+               <a href="./images/bobas.jpg" class="gallery__link"><img src="./images/bobas.jpg" alt="cocktail photo"
+                     class="gallery__image"></a>
+               <a href="./images/bobas.jpg" class="gallery__link"><img src="./images/bobas.jpg" alt="cocktail photo"
+                     class="gallery__image"></a>
+               <a href="./images/bobas.jpg" class="gallery__link"><img src="./images/bobas.jpg" alt="cocktail photo"
+                     class="gallery__image"></a>
+               <a href="./images/bobas.jpg" class="gallery__link"><img src="./images/bobas.jpg" alt="cocktail photo"
+                     class="gallery__image"></a>
+               <a href="./images/bobas.jpg" class="gallery__link"><img src="./images/bobas.jpg" alt="cocktail photo"
+                     class="gallery__image"></a>
+               <a href="./images/bobas.jpg" class="gallery__link"><img src="./images/bobas.jpg" alt="cocktail photo"
+                     class="gallery__image"></a>
+               <a href="./images/bobas.jpg" class="gallery__link"><img src="./images/bobas.jpg" alt="cocktail photo"
+                     class="gallery__image"></a>
+               <a href="./images/bobas.jpg" class="gallery__link"><img src="./images/bobas.jpg" alt="cocktail photo"
+                     class="gallery__image"></a>
+            </div>
+         </div>
+      </section>
+      <section id="contact" class="contact">
+         <div class="contact__left">
+            <h2 class="contact__header">
+               CHCESZ WPAŚĆ? DAWAJ ZNAĆ!
+            </h2>
+            <p class="contact__email"> Wyślij wiadomość: <a class="contact__link"
+                  href="mailto:school@tagcocktails.com">school@tagcocktails.com</a></p>
+            <p class="contact__phone">Lub zadzwoń: <a class="contact__link" href="tel:+48112233445">+48 112233445</a>
+            </p>
+            <div class="contact__see-also">
+               <h3 class="contact__see-also--text">Zobacz także:</h3>
+               <a class="contact__link--logo" href="tag-school.html" target="_blank" rel="noopener noreferrer"><img
+                     src="./images/tag-school--orange.svg" alt="TAG logo"></a>
+            </div>
+         </div>
+         <div class="contact__right">
+            <div class="mapouter">
+               <div class="gmap_canvas"><iframe width="500" height="500" id="gmap_canvas"
+                     src="https://maps.google.com/maps?q=podwale%207%2C%20krak%C3%B3w&t=&z=15&ie=UTF8&iwloc=&output=embed"
+                     frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a
+                     href="https://www.whatismyip-address.com/nordvpn-coupon/">nordvpn coupons</a></div>
+               <style>
+                  .mapouter {
+                     position: relative;
+                     text-align: right;
+                     height: 500px;
+                     width: 500px;
+                  }
+
+                  .gmap_canvas {
+                     overflow: hidden;
+                     background: none !important;
+                     height: 500px;
+                     width: 500px;
+                  }
+               </style>
+            </div>
+         </div>
+      </section>
    </div>
+   <footer class="footer">
+      <div class="container__footer">
+         <p class="footer__credits">&copy; TAG.school
+            <script type="text/javascript">document.write(new Date().getFullYear());</script>
+         </p>
+         <p class="footer__social">
+            <a class="footer__link" href="https://www.facebook.com/tagschoolkrakow" target="_blank"
+               rel="noopener noreferrer"><i class="fab fa-facebook-square"></i></a>
+            <a class="footer__link" href="https://www.instagram.com/tag.cocktails/" target="_blank"
+               rel="noopener noreferrer"><i class="fab fa-instagram"></i></a>
+         </p>
+      </div>
+   </footer>
+
+   <script type="text/javascript">
+      lightGallery(document.getElementById('lightgallery'), {
+         download: false
+      }); 
+   </script>
 </body>
 
 </html>

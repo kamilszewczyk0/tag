@@ -1,0 +1,16 @@
+.gallery {
+  min-height: 100vh;
+
+  &__header {
+    font-family: $font__header--bar;
+    font-size: $font-header;
+    padding: 40px 0;
+    transform: translateX(60%);
+  }
+
+  &__image {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+  }
+}

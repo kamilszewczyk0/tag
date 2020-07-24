@@ -1,0 +1,26 @@
+.footer {
+  width: 100%;
+  height: $nav-height;
+  box-shadow: 0 -4px 6px $primary-light;
+
+  &__credits {
+    font-family: $font__paragraph;
+    font-size: $font-paragraph;
+  }
+
+  &__link {
+    font-size: $font-icon;
+    color: $primary-light;
+    padding: 15px;
+  }
+}
+
+.container__footer {
+  max-width: 1440px;
+  height: inherit;
+  margin: 0 auto;
+  padding: 0 200px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
