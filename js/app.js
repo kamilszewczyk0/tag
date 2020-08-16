@@ -6,6 +6,7 @@ const masonry = new Macy({
     350: 2,
     700: 3,
     1024: 4,
+    1200: 5,
   },
   margin: {
     x: 30,
