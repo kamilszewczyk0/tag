@@ -55,4 +55,120 @@
       box-shadow: none;
     }
   }
+
+  &__burger {
+    display: none;
+  }
+}
+
+@media (max-width: 1300px) {
+  .navigation {
+    &__right {
+      width: 70%;
+    }
+  }
+}
+
+@media (max-width: 1150px) {
+  .navigation {
+    &__right {
+      width: 85%;
+    }
+  }
+}
+
+@media (max-width: 1024px) {
+  .navigation {
+    &__right {
+      position: fixed;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+      bottom: 0;
+      right: 0;
+      background: $primary-dark;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      margin: 0;
+      z-index: 1;
+      pointer-events: none;
+      font-size: 18px;
+      opacity: 0;
+      transition: opacity 0.3s;
+    }
+
+    &__list-item {
+      padding: 30px;
+    }
+
+    &__burger {
+      z-index: 50;
+      position: absolute;
+      top: 0.7rem;
+      right: 1.2rem;
+      display: flex;
+      cursor: pointer;
+      justify-content: center;
+      align-items: center;
+      width: 80px;
+      height: 80px;
+      border: none;
+      background: inherit;
+
+      &:focus {
+        border: none;
+        background-color: inherit;
+        outline: none;
+      }
+
+      &-line--top,
+      &-line--middle,
+      &-line--bottom {
+        content: "";
+        position: absolute;
+        width: 45px;
+        height: 5px;
+        background: $primary-light;
+        border-radius: 50px;
+        transition: all 0.3s ease-out;
+        box-shadow: 2px 2px 0 $secondary;
+      }
+
+      &-line--top {
+        transform: translateY(-12px);
+      }
+
+      &-line--bottom {
+        transform: translateY(12px);
+      }
+    }
+  }
+
+  .menu--open {
+    opacity: 1;
+    pointer-events: unset;
+    overflow: hidden;
+  }
+
+  .burger--open {
+    position: fixed;
+    overflow: hidden;
+  }
+
+  .middleLine--open {
+    transform: rotateZ(45deg);
+    box-shadow: 2px 0 0 $secondary;
+  }
+
+  .topLine--open {
+    transform: rotateZ(315deg);
+    box-shadow: 0 2px 0 $secondary;
+  }
+
+  .bottomLine--open {
+    transform: rotateZ(-45deg);
+    box-shadow: 0 2px 0 $secondary;
+  }
 }

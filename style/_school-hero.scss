@@ -27,3 +27,15 @@
     z-index: -1;
   }
 }
+
+@media (max-width: 900px) {
+  .hero {
+    &__right {
+      display: none;
+    }
+
+    &__left {
+      width: 100%;
+    }
+  }
+}

@@ -159,13 +159,16 @@
 
   .middleLine--open {
     transform: rotateZ(45deg);
+    box-shadow: 2px 0 0 $secondary;
   }
 
   .topLine--open {
     transform: rotateZ(315deg);
+    box-shadow: 0 2px 0 $secondary;
   }
 
   .bottomLine--open {
     transform: rotateZ(-45deg);
+    box-shadow: 0 2px 0 $secondary;
   }
 }
