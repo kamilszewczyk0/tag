@@ -12,6 +12,10 @@
     display: flex;
     align-items: center;
     justify-content: center;
+
+    &--mobile {
+      display: none;
+    }
   }
 
   &__img--left {
@@ -28,14 +32,31 @@
   }
 }
 
-@media (max-width: 900px) {
+@media (max-width: 1024px) {
   .hero {
     &__right {
       display: none;
     }
 
     &__left {
+      display: none;
+
+      &--mobile {
+        display: flex;
+        width: 100%;
+      }
+    }
+
+    &__img-container {
       width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    &__img--left {
+      width: 100%;
+      height: auto;
     }
   }
 }

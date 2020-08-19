@@ -45,3 +45,48 @@
     height: $img-height;
   }
 }
+
+@media (max-width: 1024px) {
+  .courses {
+    &__header,
+    &__title--odd,
+    &__title--even {
+      font-size: $font-header--mobile;
+    }
+
+    &__text--odd,
+    &__text--even {
+      font-size: $font-paragraph--mobile;
+      padding: 0;
+    }
+
+    &__img--odd,
+    &__img--even {
+      height: $img-height--mobile;
+    }
+  }
+}
+
+@media (max-width: 735px) {
+  .courses {
+    &__img--odd,
+    &__img--even {
+      display: none;
+    }
+
+    &__paragraph--odd,
+    &__paragraph--even {
+      display: block;
+    }
+
+    &__title--odd,
+    &__title--even {
+      margin: 0;
+    }
+
+    &__text--odd,
+    &__text--even {
+      text-align: justify;
+    }
+  }
+}

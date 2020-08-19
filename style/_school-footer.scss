@@ -2,6 +2,7 @@
   width: 100%;
   height: $nav-height;
   box-shadow: 0 -4px 6px $primary-dark;
+  text-align: center;
 
   &__credits {
     font-family: $font__paragraph;
@@ -23,4 +24,32 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+
+@media (max-width: 1024px) {
+  .container__footer {
+    padding: 5px;
+  }
+
+  .footer {
+    &__credits {
+      font-size: $font-paragraph--mobile;
+      text-decoration: none;
+      color: inherit;
+
+      &--link {
+        text-decoration: none;
+        color: inherit;
+      }
+    }
+
+    &__social {
+      display: flex;
+    }
+
+    &__link {
+      font-size: $font-icon--mobile;
+      padding: 7px;
+    }
+  }
 }
