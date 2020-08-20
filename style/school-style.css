@@ -394,6 +394,7 @@ body {
   }
   .about-us__paragraph--odd, .about-us__paragraph--even {
     display: block;
+    padding: 0;
   }
   .about-us__text--odd, .about-us__text--even {
     text-align: justify;
@@ -406,6 +407,7 @@ body {
   }
   .about-us__img--odd, .about-us__img--even {
     height: calc(80vw - 120px);
+    max-height: 280px;
   }
   .about-us__last-img {
     display: none;

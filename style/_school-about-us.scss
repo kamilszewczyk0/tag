@@ -87,6 +87,7 @@
     &__paragraph--odd,
     &__paragraph--even {
       display: block;
+      padding: 0;
     }
 
     &__text--odd,
@@ -104,6 +105,7 @@
     &__img--odd,
     &__img--even {
       height: calc(80vw - 120px);
+      max-height: 280px;
     }
 
     &__last-img {
