@@ -451,16 +451,28 @@ body {
   font-family: "Lato", sans-serif;
   font-size: 20px;
   padding-right: 160px;
+  text-align: justify;
 }
 
 .courses__text--even {
   font-family: "Lato", sans-serif;
   font-size: 20px;
   padding-left: 160px;
+  text-align: justify;
 }
 
 .courses__img--odd, .courses__img--even {
   height: 380px;
+}
+
+.courses__list {
+  font-family: "Lato", sans-serif;
+  font-size: 20px;
+}
+
+.courses__list--level-up {
+  text-align: left;
+  padding-left: 185px;
 }
 
 @media (max-width: 1024px) {

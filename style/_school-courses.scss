@@ -32,17 +32,29 @@
     font-family: $font__paragraph;
     font-size: $font-paragraph;
     padding-right: 160px;
+    text-align: justify;
   }
 
   &__text--even {
     font-family: $font__paragraph;
     font-size: $font-paragraph;
     padding-left: 160px;
+    text-align: justify;
   }
 
   &__img--odd,
   &__img--even {
     height: $img-height;
+  }
+
+  &__list {
+    font-family: $font__paragraph;
+    font-size: $font-paragraph;
+
+    &--level-up {
+      text-align: left;
+      padding-left: 185px;
+    }
   }
 }
 
