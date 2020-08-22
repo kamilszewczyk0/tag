@@ -89,6 +89,7 @@ iframe {
     &__right {
       width: 100%;
       margin: 30px auto;
+      text-align: center;
     }
 
     &__left {
@@ -124,5 +125,11 @@ iframe {
   iframe {
     width: 80vw;
     height: 80vw;
+  }
+}
+
+@media (min-width: 650px) and (max-width: 1024px) {
+  .contact__link--logo {
+    width: 25%;
   }
 }

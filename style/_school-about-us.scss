@@ -75,6 +75,12 @@
       box-shadow: 10px -10px 0 $secondary;
     }
 
+    &__img--odd,
+    &__img--even {
+      height: calc(80vw - 380px);
+      max-height: 280px;
+    }
+
     &__text--odd {
       padding-right: 20px;
     }
