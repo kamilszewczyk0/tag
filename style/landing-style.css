@@ -30,6 +30,7 @@ html {
   display: flex;
   overflow: inherit;
   position: relative;
+  overflow: hidden;
 }
 
 .hero-landing__left, .hero-landing__right {
