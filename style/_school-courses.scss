@@ -72,6 +72,11 @@
       padding: 0;
     }
 
+    &__list {
+      padding-left: 17px;
+      font-size: inherit;
+    }
+
     &__img--odd,
     &__img--even {
       height: $img-height--mobile;
@@ -81,6 +86,10 @@
 
 @media (max-width: 735px) {
   .courses {
+    &__header {
+      margin-top: 50px;
+    }
+
     &__img--odd,
     &__img--even {
       display: none;
@@ -89,6 +98,7 @@
     &__paragraph--odd,
     &__paragraph--even {
       display: block;
+      margin: 30px 0;
     }
 
     &__title--odd,

@@ -13,7 +13,7 @@ html {
 }
 
 .container {
-  max-width: 1440px;
+  max-width: 1340px;
   height: inherit;
   margin: 0 auto;
   padding: 0 30px;
@@ -324,6 +324,9 @@ body {
   height: 380px;
   -webkit-box-shadow: 10px -10px 0 #fff;
           box-shadow: 10px -10px 0 #fff;
+  -webkit-box-ordinal-group: 2;
+      -ms-flex-order: 1;
+          order: 1;
 }
 
 .about-us__paragraph--even {
@@ -365,6 +368,13 @@ body {
           flex-direction: column;
   -ms-flex-pack: distribute;
       justify-content: space-around;
+  -webkit-box-ordinal-group: 2;
+      -ms-flex-order: 1;
+          order: 1;
+}
+
+.about-us__last-paragraph--mobile {
+  display: none;
 }
 
 @media (max-width: 1024px) {
@@ -395,22 +405,25 @@ body {
   .about-us__paragraph--odd, .about-us__paragraph--even {
     display: block;
     padding: 0;
+    margin: 30px 0;
   }
   .about-us__text--odd, .about-us__text--even {
     text-align: justify;
     vertical-align: top;
     font-size: 16px;
+    padding: 0;
   }
   .about-us__last-paragraph {
+    display: none;
+  }
+  .about-us__last-paragraph--mobile {
+    display: block;
     width: 100%;
     padding: 0;
   }
   .about-us__img--odd, .about-us__img--even {
-    height: calc(80vw - 120px);
+    height: calc(80vw - 180px);
     max-height: 280px;
-  }
-  .about-us__last-img {
-    display: none;
   }
 }
 
@@ -485,17 +498,25 @@ body {
     font-size: 16px;
     padding: 0;
   }
+  .courses__list {
+    padding-left: 17px;
+    font-size: inherit;
+  }
   .courses__img--odd, .courses__img--even {
     height: calc(60vw - 150px);
   }
 }
 
 @media (max-width: 735px) {
+  .courses__header {
+    margin-top: 50px;
+  }
   .courses__img--odd, .courses__img--even {
     display: none;
   }
   .courses__paragraph--odd, .courses__paragraph--even {
     display: block;
+    margin: 30px 0;
   }
   .courses__title--odd, .courses__title--even {
     margin: 0;
@@ -663,6 +684,11 @@ iframe {
   font-size: 20px;
 }
 
+.footer__credits--link {
+  text-decoration: none;
+  color: inherit;
+}
+
 .footer__link {
   font-size: 2rem;
   color: #000;
@@ -691,10 +717,6 @@ iframe {
   }
   .footer__credits {
     font-size: 16px;
-    text-decoration: none;
-    color: inherit;
-  }
-  .footer__credits--link {
     text-decoration: none;
     color: inherit;
   }

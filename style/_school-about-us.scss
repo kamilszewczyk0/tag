@@ -25,6 +25,7 @@
   &__img--odd {
     height: $img-height;
     box-shadow: 10px -10px 0 $secondary;
+    order: 1;
   }
 
   &__paragraph--even {
@@ -52,6 +53,11 @@
     display: flex;
     flex-direction: column;
     justify-content: space-around;
+    order: 1;
+
+    &--mobile {
+      display: none;
+    }
   }
 }
 
@@ -88,6 +94,7 @@
     &__paragraph--even {
       display: block;
       padding: 0;
+      margin: 30px 0;
     }
 
     &__text--odd,
@@ -95,21 +102,23 @@
       text-align: justify;
       vertical-align: top;
       font-size: $font-paragraph--mobile;
+      padding: 0;
     }
 
     &__last-paragraph {
-      width: 100%;
-      padding: 0;
+      display: none;
+
+      &--mobile {
+        display: block;
+        width: 100%;
+        padding: 0;
+      }
     }
 
     &__img--odd,
     &__img--even {
-      height: calc(80vw - 120px);
+      height: calc(80vw - 180px);
       max-height: 280px;
-    }
-
-    &__last-img {
-      display: none;
     }
   }
 }

@@ -7,6 +7,11 @@
   &__credits {
     font-family: $font__paragraph;
     font-size: $font-paragraph;
+
+    &--link {
+      text-decoration: none;
+      color: inherit;
+    }
   }
 
   &__link {
@@ -36,11 +41,6 @@
       font-size: $font-paragraph--mobile;
       text-decoration: none;
       color: inherit;
-
-      &--link {
-        text-decoration: none;
-        color: inherit;
-      }
     }
 
     &__social {
