@@ -2,10 +2,16 @@
   width: 100%;
   height: $nav-height;
   box-shadow: 0 -4px 6px $primary-light;
+  text-align: center;
 
   &__credits {
     font-family: $font__paragraph;
     font-size: $font-paragraph;
+
+    &--link {
+      text-decoration: none;
+      color: inherit;
+    }
   }
 
   &__link {
@@ -16,11 +22,34 @@
 }
 
 .container__footer {
-  max-width: 1440px;
+  max-width: 1340px;
   height: inherit;
   margin: 0 auto;
   padding: 0 200px;
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+
+@media (max-width: 1024px) {
+  .container__footer {
+    padding: 5px;
+  }
+
+  .footer {
+    &__credits {
+      font-size: $font-paragraph--mobile;
+      text-decoration: none;
+      color: inherit;
+    }
+
+    &__social {
+      display: flex;
+    }
+
+    &__link {
+      font-size: $font-icon--mobile;
+      padding: 7px;
+    }
+  }
 }
