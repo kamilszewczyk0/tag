@@ -60,3 +60,9 @@
     line-height: 1.6rem;
   }
 }
+
+@media (max-width: $breakpoint--mobile-big) {
+  .menu {
+    display: none;
+  }
+}

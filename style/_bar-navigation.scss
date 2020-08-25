@@ -79,6 +79,8 @@
 
 @media (max-width: 1024px) {
   .navigation {
+    height: 100px;
+
     &__right {
       position: fixed;
       width: 100%;

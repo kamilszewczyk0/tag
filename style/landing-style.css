@@ -84,14 +84,14 @@ html {
 
 @media (max-width: 1660px) {
   .hero-landing__left-hand {
-    height: 280px;
+    height: 230px;
   }
   .hero-landing__right-hand {
-    height: 320px;
+    height: 290px;
   }
 }
 
-@media (max-width: 1360px) {
+@media (max-width: 1260px) {
   .hero-landing__left-hand {
     height: 240px;
   }
