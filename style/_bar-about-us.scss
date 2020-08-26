@@ -98,8 +98,11 @@
 
 @media (max-width: 735px) {
   .about-us {
+    min-height: unset;
+    margin: 30px 0;
     &__header {
       font-size: $font-header--mobile;
+      transform: unset;
     }
     &__paragraph--odd,
     &__paragraph--even {

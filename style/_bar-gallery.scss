@@ -14,3 +14,13 @@
     object-fit: cover;
   }
 }
+
+@media (max-width: $breakpoint--mobile-big) {
+  .gallery {
+    &__header {
+      padding-right: 10px;
+      transform: unset;
+      text-align: right;
+    }
+  }
+}

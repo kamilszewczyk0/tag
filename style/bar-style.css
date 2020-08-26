@@ -281,7 +281,7 @@ body {
   .hero__header {
     font-size: 48px;
   }
-  .hero__img--hand {
+  .hero__img-container2 {
     display: none;
   }
 }
@@ -436,8 +436,14 @@ body {
 }
 
 @media (max-width: 735px) {
+  .about-us {
+    min-height: unset;
+    margin: 30px 0;
+  }
   .about-us__header {
     font-size: 1.6rem;
+    -webkit-transform: unset;
+            transform: unset;
   }
   .about-us__paragraph--odd, .about-us__paragraph--even {
     display: block;
@@ -539,12 +545,6 @@ body {
   line-height: 1.6rem;
 }
 
-@media (max-width: 700px) {
-  .menu {
-    display: none;
-  }
-}
-
 .gallery {
   min-height: 100vh;
 }
@@ -562,6 +562,15 @@ body {
   width: 100%;
   -o-object-fit: cover;
      object-fit: cover;
+}
+
+@media (max-width: 700px) {
+  .gallery__header {
+    padding-right: 10px;
+    -webkit-transform: unset;
+            transform: unset;
+    text-align: right;
+  }
 }
 
 .contact {
