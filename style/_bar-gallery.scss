@@ -4,8 +4,8 @@
   &__header {
     font-family: $font__header--bar;
     font-size: $font-header;
-    padding: 40px 0;
-    transform: translateX(60%);
+    text-align: right;
+    padding: 40px 200px;
   }
 
   &__image {
@@ -18,9 +18,7 @@
 @media (max-width: $breakpoint--mobile-big) {
   .gallery {
     &__header {
-      padding-right: 10px;
-      transform: unset;
-      text-align: right;
+      padding: 20px 20px 20px 0;
     }
   }
 }

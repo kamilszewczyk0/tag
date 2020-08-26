@@ -983,7 +983,7 @@ body:not(.lg-from-hash)
 }
 
 .lg-outer .lg-item {
-  background: url("../photos/images/loading.gif") no-repeat scroll center center
+  background: url("../images/images/loading.gif") no-repeat scroll center center
     transparent;
   display: none !important;
 }

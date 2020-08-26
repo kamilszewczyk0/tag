@@ -323,11 +323,12 @@ body {
 }
 
 .about-us__header {
+  display: inline-block;
   font-family: "Anton", sans-serif;
   font-size: 2.3rem;
   padding: 40px 0;
-  -webkit-transform: translateX(25%);
-          transform: translateX(25%);
+  -webkit-transform: translateX(100%);
+          transform: translateX(100%);
 }
 
 .about-us__paragraph--odd {
@@ -486,7 +487,7 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  height: 80vh;
+  min-height: 80vh;
 }
 
 .menu__left, .menu__right {
@@ -505,7 +506,7 @@ body {
 
 .menu__img--hand {
   position: absolute;
-  height: 46%;
+  height: 43%;
   -webkit-transform: rotateZ(10deg) translateY(-25vh);
           transform: rotateZ(10deg) translateY(-25vh);
   left: -7%;
@@ -545,6 +546,45 @@ body {
   line-height: 1.6rem;
 }
 
+@media (max-width: 1260px) {
+  .menu__img--hand {
+    height: 30%;
+  }
+}
+
+@media (max-width: 700px) {
+  .menu {
+    margin-top: 60px;
+    padding-top: 40px;
+  }
+  .menu__container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .menu__header {
+    padding: 10px;
+    font-size: 1.6rem;
+  }
+  .menu__left {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+    margin: 60px 0;
+  }
+  .menu__img--hand {
+    display: none;
+  }
+  .menu__text {
+    width: 100%;
+    line-height: unset;
+    padding-bottom: 60px;
+    font-size: 16px;
+    text-align: justify;
+  }
+}
+
 .gallery {
   min-height: 100vh;
 }
@@ -552,9 +592,8 @@ body {
 .gallery__header {
   font-family: "Anton", sans-serif;
   font-size: 2.3rem;
-  padding: 40px 0;
-  -webkit-transform: translateX(60%);
-          transform: translateX(60%);
+  text-align: right;
+  padding: 40px 200px;
 }
 
 .gallery__image {
@@ -566,10 +605,7 @@ body {
 
 @media (max-width: 700px) {
   .gallery__header {
-    padding-right: 10px;
-    -webkit-transform: unset;
-            transform: unset;
-    text-align: right;
+    padding: 20px 20px 20px 0;
   }
 }
 
@@ -683,6 +719,7 @@ iframe {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+    margin-top: 50px;
   }
   .contact__left, .contact__right {
     width: 100%;
@@ -703,6 +740,9 @@ iframe {
   }
   .contact__see-also {
     margin-top: auto;
+  }
+  .contact__link--logo {
+    width: 70%;
   }
   .gmap_canvas {
     width: 80vw;

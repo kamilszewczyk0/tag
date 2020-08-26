@@ -3,10 +3,11 @@
   margin-top: 150px;
 
   &__header {
+    display: inline-block;
     font-family: $font__header--bar;
     font-size: $font-header;
     padding: 40px 0;
-    transform: translateX(25%);
+    transform: translateX(100%);
   }
 
   &__paragraph--odd {
@@ -100,6 +101,7 @@
   .about-us {
     min-height: unset;
     margin: 30px 0;
+
     &__header {
       font-size: $font-header--mobile;
       transform: unset;

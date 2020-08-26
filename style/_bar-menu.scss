@@ -11,7 +11,7 @@
 
   &__container {
     display: flex;
-    height: 80vh;
+    min-height: 80vh;
   }
 
   &__left,
@@ -24,7 +24,7 @@
 
   &__img--hand {
     position: absolute;
-    height: 46%;
+    height: 43%;
     transform: rotateZ(10deg) translateY(-25vh);
     left: -7%;
   }
@@ -58,5 +58,45 @@
     font-size: $font-paragraph;
     width: 55%;
     line-height: 1.6rem;
+  }
+}
+
+@media (max-width: $breakpoint--small-screen) {
+  .menu {
+    &__img--hand {
+      height: 30%;
+    }
+  }
+}
+
+@media (max-width: $breakpoint--mobile-big) {
+  .menu {
+    margin-top: 60px;
+    padding-top: 40px;
+    &__container {
+      flex-direction: column;
+    }
+
+    &__header {
+      padding: 10px;
+      font-size: $font-header--mobile;
+    }
+
+    &__left {
+      order: 1;
+      margin: 60px 0;
+    }
+
+    &__img--hand {
+      display: none;
+    }
+
+    &__text {
+      width: 100%;
+      line-height: unset;
+      padding-bottom: 60px;
+      font-size: $font-paragraph--mobile;
+      text-align: justify;
+    }
   }
 }

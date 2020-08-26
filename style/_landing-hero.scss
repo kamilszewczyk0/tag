@@ -40,14 +40,14 @@
 
   &__left-hand {
     transform: rotate(5deg);
-    height: 320px;
+    height: 290px;
     top: 3%;
     left: -60px;
   }
 
   &__right-hand {
     transform: rotate(15deg);
-    height: 380px;
+    height: 340px;
     bottom: 0;
     right: -2%;
   }
@@ -61,6 +61,14 @@
 
     &__right-hand {
       height: 290px;
+    }
+
+    &__tag-school {
+      height: 170px;
+    }
+
+    &__tag {
+      height: 200px;
     }
   }
 }
