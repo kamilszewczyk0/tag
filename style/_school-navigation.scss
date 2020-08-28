@@ -39,6 +39,7 @@
 
     &--btn {
       color: $primary-light;
+      background-color: $primary-dark;
     }
   }
 
@@ -46,7 +47,6 @@
     font-family: $font__header--school;
     background-color: $primary-dark;
     border: none;
-    border-radius: 25px;
     box-shadow: 3px 3px 0 $secondary;
     padding: 5px 15px;
 

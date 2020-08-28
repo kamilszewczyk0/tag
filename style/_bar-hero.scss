@@ -39,7 +39,9 @@
 @media (max-width: $breakpoint--middle-screen) {
   .hero {
     &__header {
-      transform: translateY(-100%) translateX(10%);
+      transform: translateY(-70%) translateX(10%);
+      width: 60%;
+      text-align: right;
     }
   }
 }
@@ -48,15 +50,12 @@
   .hero {
     &__header {
       font-size: 48px;
-    }
-
-    &__img-container2 {
-      display: none;
+      width: 60%;
     }
   }
 }
 
-@media (max-width: $breakpoint--small-screen) {
+@media (max-width: 850px) {
   .hero {
     height: calc(100vh - 100px);
     display: grid;
@@ -72,11 +71,25 @@
     }
 
     &__header {
-      grid-area: 2/2;
+      grid-area: 2/1;
       position: unset;
       font-size: 30px;
-      text-align: right;
-      padding-right: 50px;
+      text-align: left;
+      padding: 0 0 20px 10px;
+      transform: unset;
+    }
+
+    &__img-container2 {
+      grid-area: 2/2;
+      margin: auto;
+    }
+
+    &__img--hand {
+      position: unset;
+      transform: unset;
+      float: right;
+      width: 100%;
+      height: auto;
     }
   }
 }
