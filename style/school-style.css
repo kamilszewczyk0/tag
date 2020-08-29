@@ -443,16 +443,16 @@ body {
   display: -ms-flexbox;
   display: flex;
   margin: 80px 0;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
 }
 
 .courses__paragraph--even {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: reverse;
-      -ms-flex-direction: row-reverse;
-          flex-direction: row-reverse;
   margin: 80px 0;
 }
 
@@ -480,7 +480,12 @@ body {
 }
 
 .courses__img--odd, .courses__img--even {
-  height: 380px;
+  -o-object-fit: contain;
+     object-fit: contain;
+  -o-object-position: top;
+     object-position: top;
+  width: 18%;
+  margin-top: 36.8px;
 }
 
 .courses__list {
@@ -510,7 +515,8 @@ body {
     font-size: inherit;
   }
   .courses__img--odd, .courses__img--even {
-    height: calc(60vw - 150px);
+    margin-left: 15px;
+    margin-right: 15px;
   }
 }
 
@@ -519,7 +525,20 @@ body {
     margin-top: 80px;
   }
   .courses__img--odd, .courses__img--even {
-    display: none;
+    width: 40%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+    margin-top: 0;
+  }
+  .courses__img--odd {
+    float: right;
+  }
+  .courses__img--even {
+    float: left;
   }
   .courses__paragraph--odd, .courses__paragraph--even {
     display: block;
