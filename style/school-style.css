@@ -52,8 +52,8 @@ body {
 }
 
 .hero__img--left {
-  height: 70%;
-  width: auto;
+  -webkit-transform: scale(0.8);
+          transform: scale(0.8);
 }
 
 .hero__img--right {
