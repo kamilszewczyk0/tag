@@ -1,5 +1,6 @@
 .courses {
   &__header {
+    margin-top: 70px;
     font-family: $font__header--school;
     font-size: $font-header;
     text-shadow: 3px 3px 0 $secondary;
@@ -8,13 +9,13 @@
 
   &__paragraph--odd {
     display: flex;
-    margin: 80px 0;
+    margin: 40px 0;
     flex-direction: row-reverse;
   }
 
   &__paragraph--even {
     display: flex;
-    margin: 80px 0;
+    margin: 40px 0;
   }
 
   &__description--even {
@@ -117,7 +118,7 @@
     &__paragraph--odd,
     &__paragraph--even {
       display: block;
-      margin: 30px 0;
+      margin: 20px 0;
     }
 
     &__title--odd,
