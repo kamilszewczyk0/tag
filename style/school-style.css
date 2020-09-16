@@ -316,14 +316,15 @@ body {
   -ms-flex-preferred-size: 50%;
       flex-basis: 50%;
   font-family: "Lato", sans-serif;
-  font-size: 20px;
+  font-size: 24px;
+  line-height: 2rem;
   text-align: right;
   vertical-align: middle;
   padding-right: 120px;
 }
 
 .about-us__img--odd {
-  height: 380px;
+  height: 250px;
   -webkit-box-shadow: 10px -10px 0 #fff;
           box-shadow: 10px -10px 0 #fff;
   -webkit-box-ordinal-group: 2;
@@ -345,7 +346,8 @@ body {
   -ms-flex-preferred-size: 50%;
       flex-basis: 50%;
   font-family: "Lato", sans-serif;
-  font-size: 20px;
+  font-size: 24px;
+  line-height: 2rem;
   text-align: left;
   vertical-align: middle;
   padding-left: 120px;
@@ -355,7 +357,7 @@ body {
 }
 
 .about-us__img--even {
-  height: 380px;
+  height: 250px;
   -webkit-box-shadow: -10px 10px 0 #fff;
           box-shadow: -10px 10px 0 #fff;
 }
@@ -373,6 +375,14 @@ body {
   -webkit-box-ordinal-group: 2;
       -ms-flex-order: 1;
           order: 1;
+}
+
+.about-us__last-paragraph--top, .about-us__last-paragraph--bottom {
+  margin: 0px;
+}
+
+.about-us__last-paragraph--top {
+  margin-bottom: 15px;
 }
 
 .about-us__last-paragraph--mobile {
@@ -394,7 +404,7 @@ body {
   }
   .about-us__img--odd, .about-us__img--even {
     height: calc(80vw - 380px);
-    max-height: 280px;
+    max-height: 250px;
   }
   .about-us__text--odd {
     padding-right: 20px;

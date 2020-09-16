@@ -16,7 +16,8 @@
   &__text--odd {
     flex-basis: 50%;
     font-family: $font__paragraph;
-    font-size: $font-paragraph;
+    font-size: $font-paragraph--about;
+    line-height: 2rem;
     text-align: right;
     vertical-align: middle;
     padding-right: 120px;
@@ -37,7 +38,8 @@
   &__text--even {
     flex-basis: 50%;
     font-family: $font__paragraph;
-    font-size: $font-paragraph;
+    font-size: $font-paragraph--about;
+    line-height: 2rem;
     text-align: left;
     vertical-align: middle;
     padding-left: 120px;
@@ -54,6 +56,15 @@
     flex-direction: column;
     justify-content: space-around;
     order: 1;
+
+    &--top,
+    &--bottom {
+      margin: 0px;
+    }
+
+    &--top {
+      margin-bottom: 15px;
+    }
 
     &--mobile {
       display: none;
@@ -78,7 +89,7 @@
     &__img--odd,
     &__img--even {
       height: calc(80vw - 380px);
-      max-height: 280px;
+      max-height: 250px;
     }
 
     &__text--odd {
