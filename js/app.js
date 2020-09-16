@@ -1,9 +1,9 @@
 const masonry = new Macy({
   container: ".gallery__images",
-  mobileFirst: true,
-  columns: 2,
+  mobileFirst: false,
+  columns: 5,
   breakAt: {
-    300: 2,
+    450: 2,
     700: 3,
     1024: 4,
     1200: 5,
