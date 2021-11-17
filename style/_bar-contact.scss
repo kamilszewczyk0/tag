@@ -1,6 +1,6 @@
 .contact {
   margin-top: 200px;
-  min-height: 70vh;
+  // min-height: 70vh;
   display: flex;
   margin-bottom: 50px;
 
@@ -59,6 +59,12 @@
       font-size: $font-header;
       margin: 0;
     }
+  }
+
+  &__momondo {
+    display: grid;
+    place-items: center;
+    margin-bottom: 50px;
   }
 }
 
